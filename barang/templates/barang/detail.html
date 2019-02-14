@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+    <link rel='stylesheet' href="{%static 'css/bootstrap.min.css' %}">
+    <link rel='stylesheet' href="{%static 'css/main.css' %}">
+</head>
+<header>
+    <div class="color d-flex p-3 border-bottom">
+        <h5 class="my-0 mr-md-auto font-weight-normal">Toko Online</h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+          <a class="p-2 text-dark" href="{% url 'barang' %}">Home</a>
+    </div>
+</header>
+<body>
+    <div class="margin container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-12">
+                    <img src="{% static 'images/iphone.jpg' %}"/><br>
+                    <span>I Phone X</span><br>
+                    <span>Rp.15.000.000</span><br>
+                    <span>Deskripsi</span><br>
+                    <table>
+                        <ul>
+                            <li>Good Phone</li>
+                            <li>Black</li>
+                            <li>Great Quality</li>
+                            <li>Made in Indonesia</li>
+                        </ul>
+                    </table>                                               
+                </div>
+            </div>
+    </div>
+</body>
